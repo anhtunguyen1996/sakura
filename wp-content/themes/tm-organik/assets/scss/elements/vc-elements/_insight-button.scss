@@ -1,0 +1,55 @@
+.insight-btn {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 25px;
+    border-radius: 3px;
+    border: 2px solid $primary-color;
+    background-color: $primary-color;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+
+    &:hover {
+        color: $primary-color;
+        background: none;
+    }
+
+    &.style-brown {
+        background-color: #392a25;
+        border-color: #392a25;
+        color: #fff;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &.style-arrow {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: $primary-color;
+        font-size: 15px;
+        font-weight: 700;
+
+        &:after {
+            content: '\f10b';
+            font-family: Ionicons;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        &:hover {
+            margin-left: 10px;
+        }
+    }
+
+    // size
+    &.small {
+        padding: 11px 25px;
+        font-size: 15px;
+    }
+}

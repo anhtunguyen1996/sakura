@@ -1,0 +1,29 @@
+.wpcf7-form {
+    .row {
+        margin-bottom: 18px;
+
+        label {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        &.submit-container {
+            text-align: center;
+
+            input[type=submit] {
+                margin-top: 8px;
+            }
+        }
+
+        .wpcf7-not-valid-tip {
+            font-style: italic;
+        }
+    }
+
+    div.wpcf7-response-output {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

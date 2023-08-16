@@ -1,0 +1,44 @@
+.pri-color {
+    color: $primary-color !important;
+}
+
+.nd-color {
+    color: $secondary-color !important;
+}
+
+.pri-bgcolor {
+    background-color: $primary-color;
+}
+
+.nd-bgcolor {
+    background-color: $secondary-color;
+}
+
+.z-index2 {
+    position: relative;
+    z-index: 2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+html .row:before, html .row:after {
+    display: block;
+}
+
+body {
+    .col-md-4p {
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            width: 40%;
+        }
+    }
+
+    .col-md-6p {
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            width: 60%;
+        }
+    }
+}

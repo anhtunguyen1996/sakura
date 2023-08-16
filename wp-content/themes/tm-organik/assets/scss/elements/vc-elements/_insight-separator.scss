@@ -1,0 +1,39 @@
+.insight-separator {
+    .separator {
+        max-width: 350px;
+
+        .separator--icon {
+            width: 70px;
+            text-align: center;
+
+            i {
+                font-size: 30px;
+                color: $primary-color;
+                display: inline-block;
+            }
+        }
+
+        .vc_sep_line {
+            border-color: #5e5a54;
+        }
+
+        &:hover {
+            i {
+                animation: spinner 2s linear infinite;
+                -webkit-animation: spinner 2s linear infinite;
+            }
+        }
+    }
+
+    &.custom-color {
+        .separator--icon {
+            i {
+                color: inherit;
+            }
+        }
+
+        .vc_sep_holder .vc_sep_line {
+            border-color: inherit;
+        }
+    }
+}

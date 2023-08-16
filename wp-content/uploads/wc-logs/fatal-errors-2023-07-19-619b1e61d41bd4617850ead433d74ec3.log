@@ -1,0 +1,13 @@
+2023-07-19T14:44:38+00:00 CRITICAL Uncaught Error: Call to a member function set_currency() on null in /home/nongs765/public_html/wp-content/themes/tm-organik/functions.php:63
+Stack trace:
+#0 /home/nongs765/public_html/wp-includes/class-wp-hook.php(308): {closure}('')
+#1 /home/nongs765/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home/nongs765/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/nongs765/public_html/wp-includes/general-template.php(3049): do_action('wp_head')
+#4 /home/nongs765/public_html/wp-content/themes/tm-organik/header.php(21): wp_head()
+#5 /home/nongs765/public_html/wp-includes/template.php(783): require_once('/home/nongs765/...')
+#6 /home/nongs765/public_html/wp-includes/template.php(718): load_template('/home/nongs765/...', true, Array)
+#7 /home/nongs765/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#8 /home/nongs765/public_html/wp-content/themes/tm-organik/page.php(15): get_header()
+#9 /home/nongs765/public_ in /home/nongs765/public_html/wp-content/themes/tm-organik/functions.php on line 63
+

@@ -1,0 +1,122 @@
+<?php
+$section  = 'settings_preset';
+$priority = 1;
+$prefix   = 'settings_preset_';
+
+Kiki::add_field( 'theme', array(
+	'type'     => 'preset',
+	'settings' => 'settings_preset',
+	'label'    => esc_html__( 'Settings Preset', 'tm-organik' ),
+	'section'  => $section,
+	'default'  => '-1',
+	'priority' => $priority ++,
+	'multiple' => 3,
+	'choices'  => array(
+		'-1' => array(
+			'label'    => esc_html__( 'None', 'tm-organik' ),
+			'settings' => array(),
+		),
+		'01' => array(
+			'label'    => esc_html__( 'Setting Preset 01', 'tm-organik' ),
+			'settings' => array(
+				'header_type'                     => 'header-04',
+				'topbar_type'                     => 'topbar-02',
+				'site_body_typo'                  => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => 'regular',
+					'color'          => '#5E5A54',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0em',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'spectial_heading_typo'           => array(
+					'font-family'    => 'Rossela Demo',
+					'variant'        => '400',
+					'line-height'    => '1.5',
+					'color'          => '#392A25',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'heading_typo'                    => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '600',
+					'color'          => '#392A25',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'page_title_typo'                 => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '500',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'menu_typo'                       => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '500',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0em',
+					'text-transform' => 'capitalize',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'menu_level_1_font_size'          => '17',
+				'navigation_lvl_1_padding_top'    => '35',
+				'navigation_lvl_1_padding_bottom' => '35',
+				'navigation_lvl_1_padding_left'   => '15',
+				'navigation_lvl_1_padding_right'  => '15',
+			),
+		),
+		'02' => array(
+			'label'    => esc_html__( 'Setting Preset 01', 'tm-organik' ),
+			'settings' => array(
+				'header_type'                     => 'header-05',
+				'topbar_type'                     => 'topbar-03',
+				'site_body_typo'                  => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => 'regular',
+					'color'          => '#5E5A54',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0em',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'spectial_heading_typo'           => array(
+					'font-family'    => 'Rossela Demo',
+					'variant'        => '400',
+					'line-height'    => '1.5',
+					'color'          => '#392A25',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'heading_typo'                    => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '600',
+					'color'          => '#392A25',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'page_title_typo'                 => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '500',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'menu_typo'                       => array(
+					'font-family'    => Insight::THIRD_FONT,
+					'variant'        => '500',
+					'line-height'    => '1.5',
+					'letter-spacing' => '0em',
+					'text-transform' => 'capitalize',
+					'subsets'        => array( 'latin-ext' ),
+				),
+				'menu_level_1_font_size'          => '17',
+				'navigation_lvl_1_padding_top'    => '40',
+				'navigation_lvl_1_padding_bottom' => '40',
+				'navigation_lvl_1_padding_left'   => '15',
+				'navigation_lvl_1_padding_right'  => '15',
+			),
+		),
+	),
+) );

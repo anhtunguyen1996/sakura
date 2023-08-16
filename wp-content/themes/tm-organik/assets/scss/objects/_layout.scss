@@ -1,0 +1,51 @@
+[mode="boxed"],
+[mode="wide"],
+.content {
+	> .wrapper {
+		@include boxed;
+	}
+}
+
+.xwide,
+[mode="xwide"] {
+	> .wrapper {
+		@extend .container-fluid;
+	}
+}
+
+[blog="fullwidth"] {
+	.content-area {
+		@include col(xs, 12);
+	}
+}
+
+[blog="content-sidebar"] {
+	.content-area {
+		@include col(lg, 9);
+		overflow: hidden;
+	}
+
+	.widget-area {
+		@include col(lg, 3);
+	}
+}
+
+[blog="sidebar-content"] {
+	.content-area {
+		@extend .col-xl-last;
+		@include col(lg, 9);
+		overflow: hidden;
+	}
+
+	.widget-area {
+		@include col(lg, 3);
+	}
+}
+
+
+@media screen and (min-width: 1430px) {
+	.vc_row.width-1417 {
+		width: 1400px;
+		transform: translateX(-130px);
+	}
+}

@@ -1,0 +1,81 @@
+.insight-team-member {
+    text-align: center;
+
+    .name {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 31px;
+
+        &:after {
+            content: '';
+            display: block;
+            background-color: $primary-color;
+            width: 60px;
+            height: 1px;
+            margin: 7px auto;
+        }
+    }
+
+    .social-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-align: center;
+                margin: 0 4px;
+                box-sizing: border-box;
+                display: block;
+                height: 40px;
+                width: 40px;
+                line-height: 38px;
+                color: #8e8b87;
+                border: 1px solid #8e8b87;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                    color: #fff;
+                }
+            }
+
+            &.facebook {
+                a:hover {
+                    background-color: #3b5998;
+                    border-color: #3b5998;
+                }
+            }
+
+            &.google-plus {
+                a:hover {
+                    background-color: #dd4b39;
+                    border-color: #dd4b39;
+                }
+            }
+
+            &.pinterest {
+                a:hover {
+                    background-color: #cb2027;
+                    border-color: #cb2027;
+                }
+            }
+
+            &.twitter {
+                a:hover {
+                    background-color: #55acee;
+                    border-color: #55acee;
+                }
+            }
+
+            &.youtube-play {
+                a:hover {
+                    background-color: #bb0000;
+                    border-color: #bb0000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.page-title {
+    padding-top: 110px;
+    padding-bottom: 170px;
+    color: #fff;
+    background: #7fca90;
+    text-align: center;
+    background-image: url("assets/images/big_title_bg_1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    .title {
+        font-family: "Great Vibes", "Comic Sans MS", cursive, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 56px;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        color: #fff;
+    }
+}
+
+.gv-font {
+    font-family: "Great Vibes" !important;
+}
+
+.mw-750 {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.quote-name {
+    font-style: italic;
+
+    strong {
+        font-style: normal;
+        color: #392a25;
+    }
+}
+
+.content-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body.no-padding {
+    .content {
+        .content-area {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .entry-content {
+                margin-bottom: 0;
+            }
+        }
+
+        article {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.display_none {
+    display: none;
+}

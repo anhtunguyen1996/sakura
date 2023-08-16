@@ -1,0 +1,31 @@
+.breadcrumbs {
+    font-size: 14px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+    text-transform: uppercase;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            &:after {
+                content: '//';
+                margin-left: 20px;
+            }
+
+            &:last-child {
+                color: $primary-color;
+
+                &:after {
+                    content: '';
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

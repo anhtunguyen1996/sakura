@@ -1,0 +1,53 @@
+body.woocommerce-wishlist {
+    .wishlist-title {
+        display: none;
+    }
+
+    table.shop_table, table.wishlist_table {
+        border: none;
+        font-size: 15px;
+        margin-bottom: 0;
+
+        th.product-price, th.product-stock-stauts {
+            text-align: center;
+        }
+
+        .add_to_cart {
+            height: 40px;
+            line-height: 40px;
+            background-color: $primary-color !important;
+            color: #fff;
+            padding: 0 15px !important;
+            text-transform: uppercase;
+            min-width: 152px;
+        }
+
+        td.product-name {
+            font-weight: 700;
+        }
+
+        td.product-remove {
+            padding-left: 0;
+            text-align: left;
+        }
+
+        td.product-add-to-cart {
+            text-align: right;
+            padding-right: 0;
+        }
+    }
+
+    .woo-notice {
+        padding: 0;
+    }
+
+    &:not(.search) {
+        .content, .content-area {
+            h2, h3 {
+                font-family: $font__second;
+                font-size: 34px;
+                font-weight: 400;
+            }
+        }
+    }
+}

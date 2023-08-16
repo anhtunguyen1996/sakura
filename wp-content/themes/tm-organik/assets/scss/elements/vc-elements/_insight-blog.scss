@@ -1,0 +1,47 @@
+.insight-blog {
+    & > div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .row {
+            &:nth-child(even) {
+                .col-md-6 {
+                    &:first-child {
+                        order: 1;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+
+                        .entry-title {
+                            &:before {
+                                right: -70px;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.grid_has_padding {
+        .blog-grid-style {
+            div.post-thumbnail {
+                margin-bottom: 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .desc-content {
+            padding: 25px 30px 35px;
+            background-color: #fff;
+        }
+    }
+}

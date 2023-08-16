@@ -1,0 +1,82 @@
+@include media-breakpoint-down(sm) {
+    /*.container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }*/
+    .copyright {
+        .copyright_text, .copyright_payment_img {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    body.admin-bar header.headroom--not-top {
+        top: 0;
+    }
+    body.woocommerce {
+        .products.list {
+            .product {
+                .product-info {
+                    margin-top: 20px;
+
+                    .product-rate {
+                        position: relative !important;
+                        top: auto !important;
+                        right: auto !important;
+                        text-align: left !important;
+
+                        .star-rating {
+                            margin-top: 5px !important;
+                        }
+
+                        .text-rating {
+                            position: relative !important;
+                            top: auto !important;
+                            right: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .topbar {
+        text-align: center;
+
+        .topbar__text {
+            span {
+                display: block;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+
+        .topbar__menu {
+            text-align: center;
+
+            ul {
+                li {
+                    padding: 0 10px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .blog-list-style .post-thumbnail {
+        margin-bottom: 30px;
+    }
+    body.woocommerce.single-product .woocommerce-tabs ul.tabs {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .vc_column_container {
+        &.vc_col-sm-4, &.vc_col-sm-8, &.vc_col-sm-6 {
+            width: 100%;
+        }
+
+        .slick-dots {
+            display: none !important;
+        }
+    }
+}

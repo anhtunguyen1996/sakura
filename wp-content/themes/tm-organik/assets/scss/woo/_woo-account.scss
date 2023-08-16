@@ -1,0 +1,176 @@
+body.woocommerce-account {
+    .woocommerce-MyAccount-navigation {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                padding: 0;
+                margin: 0;
+
+                a {
+                    display: block;
+                    padding: 15px 0;
+                    border-bottom: 1px solid $light-gray-color;
+                    position: relative;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding-left: 20px;
+
+                        &:before {
+                            position: absolute;
+                            content: '\f462';
+                            font-family: 'Ionicons';
+                            left: 0;
+                            top: 17px;
+                            color: inherit;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    fieldset {
+        border: 1px solid $light-gray-color;
+        @include border-radius(2px);
+    }
+
+    a.button, input[type="submit"], button[type="submit"] {
+        height: 40px;
+        line-height: 40px;
+        background: $primary-color;
+        color: #fff;
+        padding: 0 15px;
+        text-transform: uppercase;
+        @include border-radius(2px);
+    }
+
+    form.login {
+        @include border-radius(2px);
+        border-color: $light-gray-color;
+    }
+
+    table.shop_table {
+        border: none;
+        font-size: 15px;
+
+        td {
+            border-width: 1px 0 0 0;
+            border-style: solid;
+            border-color: #f4f4f4;
+            padding: 15px 15px 15px 0;
+
+            &.product-name {
+                a {
+                    font-weight: 700;
+                }
+
+                padding-left: 0;
+            }
+
+            &.order-actions {
+                padding-right: 0;
+                text-align: right;
+            }
+
+            &.product-remove {
+                padding-left: 0;
+            }
+
+            &.product-subtotal {
+                text-align: right;
+                font-weight: 700;
+                padding-right: 0;
+                color: $primary-color;
+            }
+
+            &.product-thumbnail {
+                img {
+                    width: 100px;
+                    border: 2px solid $light-gray-color;
+                }
+            }
+        }
+
+        th {
+            border-width: 1px 0 0 0;
+            border-style: solid;
+            border-color: #f4f4f4;
+            padding-left: 0;
+
+            &.order-actions {
+                padding-right: 0;
+                text-align: right;
+            }
+        }
+
+        dl.variation {
+            dt, dd {
+                margin: 0 5px 0 0;
+                padding: 0;
+                display: inline-block;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        input[type="text"], input[type="submit"], button[type="submit"] {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px !important;
+            @include border-radius(2px);
+            color: $gray-color;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        input[type="text"] {
+            border-color: $light-gray-color !important;
+        }
+
+        input[type="submit"], button[type="submit"] {
+            text-transform: uppercase;
+            @include transit;
+
+            &:hover {
+                background: $primary-color;
+                color: #fff;
+            }
+        }
+
+        #coupon_code {
+            width: 160px !important;
+        }
+
+        a.remove {
+            font-size: 18px;
+            font-weight: 400;
+            color: $gray-color !important;
+
+            &:hover {
+                background: none;
+                color: $primary-color !important;
+            }
+        }
+    }
+
+    &:not(.search) {
+        .content, .content-area {
+            h2, h3 {
+                font-family: $font__second;
+                font-size: 34px;
+                font-weight: 400;
+            }
+        }
+    }
+}

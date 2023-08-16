@@ -1,0 +1,1135 @@
+.insight-testimonials {
+	margin-bottom: 0 !important;
+
+	&.list {
+		.item {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.style1, &.style7 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			text-align: center;
+			outline: none;
+			z-index: 98;
+
+			.text {
+				width: 80%;
+				max-width: 710px;
+				margin: 0 auto;
+				font-size: 24px;
+				color: #fff;
+				font-style: italic;
+				background-image: url('assets/images/testi_quote.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+
+			.info {
+				margin-top: 50px;
+				display: inline-block;
+				@include media-breakpoint-down(sm) {
+					text-align: center;
+					.photo {
+						float: none !important;
+
+						img {
+							float: none;
+						}
+					}
+				}
+
+				.photo {
+					height: 80px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 80px;
+						height: 80px;
+						border-radius: 40px;
+					}
+
+					margin: 0 10px;
+				}
+
+				.author {
+					height: 80px;
+					display: inline-block;
+					margin: 0 10px;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-gray-color;
+						font-weight: 700;
+						margin-top: 15px;
+					}
+
+					.tagline {
+						color: #fff;
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-prev, .slick-next {
+			width: 48px;
+			height: 48px;
+			top: 100px;
+			margin-top: -24px;
+			background: none;
+			border-radius: 0;
+			z-index: 99;
+			opacity: .2;
+			@include transit;
+		}
+
+		.slick-prev:before, .slick-next:before {
+			font-size: 48px;
+			font-weight: 400;
+			font-family: Ionicons;
+			color: $dark-gray-color;
+			opacity: 1;
+		}
+
+		.slick-prev:hover, .slick-next:hover {
+			opacity: 1;
+		}
+
+		.slick-prev {
+			&:before {
+				content: '\f3d2';
+			}
+		}
+
+		.slick-next {
+			&:before {
+				content: '\f3d3';
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background-color: rgba(255, 255, 255, .5);
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: #fff;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(255, 255, 255, .3);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style7 {
+		.item {
+			.text {
+				color: $primary-color;
+				font-size: 34px;
+				line-height: 48px;
+				letter-spacing: 0;
+				font-style: normal;
+				background: none;
+			}
+
+			.info {
+				margin-top: 25px;
+
+				.author {
+					.name, .tagline {
+						display: inline-block;
+						letter-spacing: 0.05em;
+						font-size: 14px;
+					}
+
+					.name {
+						color: #392a25;
+						font-weight: bold;
+						margin-top: 30px;
+					}
+
+					.tagline {
+						color: #5e5a54;
+						font-style: italic;
+						padding-bottom: 2px;
+
+						&:before {
+							content: '/';
+							display: inline-block;
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style3 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			text-align: center;
+			outline: none;
+			z-index: 98;
+
+			.text {
+				width: 80%;
+				max-width: 710px;
+				margin: 0 auto;
+				font-size: 24px;
+				color: #5e5a54;
+				font-style: italic;
+				background-image: url('assets/images/testi_quote.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+
+			.info {
+				margin-top: 50px;
+				display: inline-block;
+				@include media-breakpoint-down(sm) {
+					text-align: center;
+					.photo {
+						float: none !important;
+
+						img {
+							float: none;
+						}
+					}
+				}
+
+				.photo {
+					height: 80px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 80px;
+						height: 80px;
+						border-radius: 40px;
+					}
+
+					margin: 0 10px;
+				}
+
+				.author {
+					height: 80px;
+					display: inline-block;
+					margin: 0 10px;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-gray-color;
+						font-weight: 700;
+						margin-top: 15px;
+					}
+
+					.tagline {
+						color: #5e5a54;
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-prev, .slick-next {
+			width: 48px;
+			height: 48px;
+			top: 100px;
+			margin-top: -24px;
+			background: none;
+			border-radius: 0;
+			z-index: 99;
+		}
+
+		.slick-prev:before, .slick-next:before {
+			font-size: 48px;
+			font-weight: 400;
+			font-family: Ionicons;
+			color: #d1cfce;
+			opacity: 1;
+			@include transit;
+		}
+
+		.slick-prev:hover, .slick-next:hover {
+			&:before {
+				color: $primary-color;
+			}
+		}
+
+		.slick-prev {
+			&:before {
+				content: '\f3d2';
+			}
+		}
+
+		.slick-next {
+			&:before {
+				content: '\f3d3';
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background: $light-gray-color;
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(0, 0, 0, .08);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style6 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			text-align: center;
+			outline: none;
+			z-index: 98;
+
+			.text {
+				width: 80%;
+				max-width: 710px;
+				margin: 0 auto;
+				font-size: 24px;
+				color: #5e5a54;
+				font-style: italic;
+				background-image: url('assets/images/testi_quote.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+
+			.info {
+				margin-top: 50px;
+				display: inline-block;
+				@include media-breakpoint-down(sm) {
+					text-align: center;
+					.photo {
+						float: none !important;
+
+						img {
+							float: none;
+						}
+					}
+				}
+
+				.photo {
+					height: 80px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 80px;
+						height: 80px;
+						border-radius: 40px;
+					}
+
+					margin: 0 10px;
+				}
+
+				.author {
+					height: 80px;
+					display: inline-block;
+					margin: 0 10px;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-gray-color;
+						font-weight: 700;
+						margin-top: 15px;
+					}
+
+					.tagline {
+						color: #5e5a54;
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-prev, .slick-next {
+			width: 48px;
+			height: 48px;
+			top: 100px;
+			margin-top: -24px;
+			background: none;
+			border-radius: 0;
+			z-index: 99;
+		}
+
+		.slick-prev:before, .slick-next:before {
+			font-size: 48px;
+			font-weight: 400;
+			font-family: Ionicons;
+			color: #d1cfce;
+			opacity: 1;
+			@include transit;
+		}
+
+		.slick-prev:hover, .slick-next:hover {
+			&:before {
+				color: $primary-color;
+			}
+		}
+
+		.slick-prev {
+			&:before {
+				content: '\f3d2';
+			}
+		}
+
+		.slick-next {
+			&:before {
+				content: '\f3d3';
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background: #fff;
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(0, 0, 0, .08);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style2 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			outline: none;
+			z-index: 98;
+			padding: 0 15px;
+
+			.text {
+				width: 100%;
+				background: #fff;
+				padding: 40px 50px;
+				@include border-radius(4px);
+				font-size: 18px;
+				font-style: italic;
+				line-height: 1.8;
+				position: relative;
+				z-index: 98;
+
+				&:before {
+					content: '';
+					left: 15px;
+					top: 25px;
+					width: 20px;
+					height: 20px;
+					background-image: url("assets/images/testi_quote_2.png");
+					z-index: 99;
+					position: absolute;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -16px;
+					left: 50px;
+					width: 0;
+					height: 0;
+					border-top: 16px solid #fff;
+					border-right: 16px solid transparent;
+					z-index: 99;
+				}
+			}
+
+			.info {
+				margin-top: 40px;
+				display: inline-block;
+
+				.photo {
+					height: 60px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 60px;
+						height: 60px;
+						border-radius: 30px;
+						border: 4px solid rgba(255, 255, 255, .2);
+					}
+
+					margin-right: 20px;
+				}
+
+				.author {
+					height: 60px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: #fff;
+						font-weight: 700;
+						margin-top: 5px;
+					}
+
+					.tagline {
+						color: #fff;
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background-color: rgba(255, 255, 255, .5);
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: #fff;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(255, 255, 255, .3);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style4 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			outline: none;
+			z-index: 98;
+			padding: 0 15px;
+
+			.text {
+				width: 100%;
+				background: #f5f3f0;
+				padding: 40px 50px;
+				@include border-radius(4px);
+				font-size: 18px;
+				font-style: italic;
+				line-height: 1.8;
+				position: relative;
+				z-index: 98;
+
+				&:before {
+					content: '';
+					left: 15px;
+					top: 25px;
+					width: 20px;
+					height: 20px;
+					background-image: url("assets/images/testi_quote_2.png");
+					z-index: 99;
+					position: absolute;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -16px;
+					left: 50px;
+					width: 0;
+					height: 0;
+					border-top: 16px solid #f5f3f0;
+					border-right: 16px solid transparent;
+					z-index: 99;
+				}
+			}
+
+			.info {
+				margin-top: 40px;
+				display: inline-block;
+
+				.photo {
+					height: 60px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 60px;
+						height: 60px;
+						border-radius: 30px;
+						border: 4px solid rgba(255, 255, 255, .2);
+					}
+
+					margin-right: 20px;
+				}
+
+				.author {
+					height: 60px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-gray-color;
+						font-weight: 700;
+						margin-top: 5px;
+					}
+
+					.tagline {
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background: $light-gray-color;
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(0, 0, 0, .08);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style5 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			outline: none;
+			z-index: 98;
+			padding: 0 15px;
+
+			.text {
+				width: 100%;
+				background: #fff;
+				padding: 40px 50px;
+				@include border-radius(4px);
+				font-size: 18px;
+				font-style: italic;
+				line-height: 1.8;
+				position: relative;
+				z-index: 98;
+
+				&:before {
+					content: '';
+					left: 15px;
+					top: 25px;
+					width: 20px;
+					height: 20px;
+					background-image: url("assets/images/testi_quote_2.png");
+					z-index: 99;
+					position: absolute;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -16px;
+					left: 50px;
+					width: 0;
+					height: 0;
+					border-top: 16px solid #fff;
+					border-right: 16px solid transparent;
+					z-index: 99;
+				}
+			}
+
+			.info {
+				margin-top: 40px;
+				display: inline-block;
+
+				.photo {
+					height: 60px;
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 60px;
+						height: 60px;
+						border-radius: 30px;
+						border: 4px solid rgba(255, 255, 255, .2);
+					}
+
+					margin-right: 20px;
+				}
+
+				.author {
+					height: 60px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+					text-align: left;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 18px;
+						text-transform: uppercase;
+						color: $dark-gray-color;
+						font-weight: 700;
+						margin-top: 5px;
+					}
+
+					.tagline {
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background: #fff;
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(0, 0, 0, .08);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style8 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			outline: none;
+			z-index: 98;
+			padding: 30px 15px;
+			margin: 0 15px;
+			text-align: center;
+			background: -webkit-radial-gradient(0% 100%, circle, transparent 10px, white 10px) no-repeat, -webkit-radial-gradient(100% 0%, circle, transparent 10px, white 10px) no-repeat, -webkit-radial-gradient(0% 0%, circle, transparent 10px, white 10px) no-repeat, -webkit-radial-gradient(100% 100%, circle, transparent 10px, white 10px) no-repeat;
+			background: radial-gradient(circle at 0% 100%, transparent 10px, white 10px) no-repeat, radial-gradient(circle at 100% 0%, transparent 10px, white 10px) no-repeat, radial-gradient(circle at 0% 0%, transparent 10px, white 10px) no-repeat, radial-gradient(circle at 100% 100%, transparent 10px, white 10px) no-repeat;
+			background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%;
+			background-size: 75% 75%;
+
+			.text {
+				width: 100%;
+				font-size: 18px;
+				font-style: italic;
+				line-height: 1.8;
+				position: relative;
+				z-index: 98;
+				padding: 40px 0 30px 0;
+
+				&:before {
+					content: '';
+					left: 50%;
+					top: 0;
+					width: 20px;
+					height: 20px;
+					background-image: url("assets/images/testi_quote_2.png");
+					z-index: 99;
+					position: absolute;
+					transform: translateX(-50%);
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+
+			.info {
+				display: inline-block;
+
+				.photo {
+					display: none;
+				}
+
+				.author {
+					display: inline-block;
+					margin: 0;
+					text-align: center;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 14px;
+						text-transform: uppercase;
+						color: #392a25;
+						font-weight: 700;
+					}
+
+					.tagline {
+						color: #b3b0ab;
+						font-size: 15px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 60px 0 0 0;
+
+			li {
+				button {
+					width: 10px;
+					height: 10px;
+					line-height: 16px;
+					background-color: #a5a4a4;
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: $primary-color;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							top: -3px;
+							left: -3px;
+							content: '';
+							border-radius: 8px;
+							width: 16px;
+							height: 16px;
+							background-color: rgba(255, 255, 255, .3);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style9 {
+		width: 100%;
+		outline: none;
+
+		.item {
+			width: 100%;
+			outline: none;
+			z-index: 98;
+			padding: 0 15px;
+
+			.inner {
+				position: relative;
+				padding: 43px 40px 38px;
+
+				&:before {
+					content: '';
+					right: 20px;
+					top: 20px;
+					width: 32px;
+					height: 32px;
+					background-image: url("assets/images/testi_quote_3.png");
+					background-repeat: no-repeat;
+					z-index: 99;
+					position: absolute;
+				}
+			}
+
+			.heading {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+
+			.text {
+				width: 100%;
+				font-size: 18px;
+				line-height: 1.8;
+				z-index: 98;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			.info {
+				display: flex;
+				align-items: center;
+				margin-top: 32px;
+
+				.photo {
+					margin-right: 15px;
+					width: 60px;
+				}
+
+				.author {
+					margin: 0;
+
+					.name, .tagline {
+						display: block;
+					}
+
+					.name {
+						font-size: 15px;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						color: #392a25;
+						font-weight: 500;
+					}
+
+					.tagline {
+						color: #5e5a54;
+						font-size: 16px;
+						font-weight: 400;
+
+						&:before {
+							content: '/';
+						}
+					}
+				}
+			}
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: auto;
+			margin: 30px 0 0 0;
+
+			li {
+				button {
+					width: 8px;
+					height: 8px;
+					background-color: rgba(51, 51, 51, .3);
+					@include border-radius(50%);
+					box-sizing: border-box;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background-color: #392a25;
+						position: relative;
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+		}
+	}
+}

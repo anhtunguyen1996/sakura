@@ -1,0 +1,208 @@
+.copyright {
+    display: block;
+    width: 100%;
+
+    &__social {
+        @include col(xs, 12);
+
+        &[position='above'] {
+            @include padding-bottom(lg, 0);
+            padding-bottom: 15px;
+        }
+
+        &[position='below'] {
+            @extend .col-xs-last;
+            @include padding-top(lg, 0);
+            padding-top: 15px;
+        }
+
+        &[position='left'] {
+            @include col(lg, 3);
+            @include padding-bottom(lg, 0);
+            padding-bottom: 15px;
+
+            + .copyright__text {
+                @include col(lg, 9);
+            }
+        }
+
+        &[position='right'] {
+            @extend .col-xs-last;
+            @include col(lg, 3);
+            @include padding-top(lg, 0);
+            padding-top: 15px;
+
+            + .copyright__text {
+                @include col(lg, 9);
+            }
+        }
+    }
+
+    &__text {
+        @include col(xs, 12);
+    }
+}
+
+.footer {
+    display: block;
+    width: 100%;
+
+    .widget {
+        @include res-margin-bottom(20, 0);
+
+        .widget-title {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e4e1dd;
+            color: $dark-gray-color;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: .05em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    position: relative;
+
+                    &:hover {
+                        padding-left: 20px;
+
+                        &:before {
+                            position: absolute;
+                            content: '\f462';
+                            font-family: 'Ionicons';
+                            left: 0;
+                            top: 0;
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .textwidget {
+        line-height: 1.6;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+
+        a {
+            margin-right: 20px;
+            font-size: 16px;
+        }
+    }
+
+    .footer-c1 {
+        img {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .textwidget {
+            max-width: 370px;
+        }
+    }
+
+    .footer-c1, .footer-c2, .footer-c3, .footer-c4 {
+        margin-bottom: 30px;
+    }
+
+    .mc4wp-form {
+        margin-top: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+
+        input {
+            height: 40px;
+            line-height: 40px;
+            border: none;
+            float: left;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input[type="email"] {
+            padding: 0 20px;
+            width: 100%;
+            border-radius: 3px;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-style: italic;
+                color: #aaaaaa;
+            }
+
+            &::-moz-placeholder { /* Firefox 19+ */
+                font-style: italic;
+                color: #aaaaaa;
+            }
+
+            &:-ms-input-placeholder { /* IE 10+ */
+                font-style: italic;
+                color: #aaaaaa;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+                font-style: italic;
+                color: #aaaaaa;
+            }
+        }
+
+        input[type="submit"], button[type="submit"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            text-align: center;
+            padding: 0;
+            box-shadow: none;
+            text-shadow: none;
+            color: #fff;
+            font-size: 0;
+            background-color: $primary-color;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyQTI2QTFFOTUyRDcxMUU2QTU1Njg4MjI1QjE3QUY5MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyQTI2QTFFQTUyRDcxMUU2QTU1Njg4MjI1QjE3QUY5MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJBMjZBMUU3NTJENzExRTZBNTU2ODgyMjVCMTdBRjkwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJBMjZBMUU4NTJENzExRTZBNTU2ODgyMjVCMTdBRjkwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Ikd+NAAAAQhJREFUeNrsl+ENgjAQhcEwACOUDdxA3IQNdAPiBLpBXcEJdANGwA1kg3o119ggJv64q4G8l7yEtj8uH68tR+6cy5agVbYQAQQgAAEIQAACEIAAZFLruYPUZCsFkv+hjW/IbTTeku9zSsQD9JzCwL5JQLzkE1F2Q+7dW5btZaTqFEpvvyTvOAUTzZ+jdOTSUEikJLfkh/uU5bWgWrK2JMQ3AK8jb7GgTnoLa5yHbgTRjCDCnGhtreu35jNy4XNwjdb8uBKvqHxjmYnttteoleKD2Ec318BpDHPstQ7R80kDImWLElKpRL8dkYosjXwqGy2I1E2jWQoI/hABAhCAAAQgAAHIj3oKMAAWXz+lqYpAnQAAAABJRU5ErkJggg==');
+            border-radius: 0 3px 3px 0;
+        }
+    }
+}
+
+.scrollup {
+    position: fixed;
+    right: 30px;
+    bottom: -50px;
+    z-index: 999;
+    display: block;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    cursor: pointer;
+
+    i {
+        height: 40px;
+        line-height: 40px;
+        display: block;
+    }
+
+    &.show {
+        bottom: 54px;
+    }
+}

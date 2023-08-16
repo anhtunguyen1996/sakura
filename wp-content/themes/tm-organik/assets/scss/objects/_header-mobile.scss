@@ -1,0 +1,48 @@
+header.header-mobile {
+    display: none;
+    width: 100%;
+
+    .header-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+
+        .mini-cart-wrap {
+            .widget_shopping_cart_content {
+                right: 45px;
+                width: calc(100% - 90px);
+            }
+        }
+    }
+
+    .header-left {
+        font-size: 24px;
+        text-align: left;
+
+        #open-left {
+            cursor: pointer;
+        }
+
+        i {
+            color: #5E5A54;
+        }
+    }
+
+    .header-center {
+        text-align: center;
+    }
+
+    .header-right {
+        text-align: right;
+        position: static;
+    }
+
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+    @include media-breakpoint-down(sm) {
+        .mini-cart-wrap .mini-cart .mini-cart-text {
+            display: none;
+        }
+    }
+}

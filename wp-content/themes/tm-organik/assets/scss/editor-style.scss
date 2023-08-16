@@ -1,0 +1,368 @@
+html .mceContentBody {
+    max-width: 95%;
+}
+
+* {
+    color: inherit;
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.625;
+}
+
+body {
+    color: #333;
+    font: 15px "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    font-weight: 300;
+    line-height: 1.625;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+h1, h2 {
+    margin: 0 0 .8125em;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 10px;
+    line-height: 2.6em;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    font-size: 14px;
+}
+
+hr {
+    margin-bottom: 1.625em;
+    height: 1px;
+    border: 0;
+    background-color: #ccc;
+}
+
+/* Text elements */
+p, ul, ol, dl {
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 1.625em;
+}
+
+ul, ol {
+    margin: 0 0 1.625em 2.5em;
+    padding: 0;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    list-style: upper-alpha;
+}
+
+ol ol ol {
+    list-style: lower-roman;
+}
+
+ol ol ol ol {
+    list-style: lower-alpha;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-bottom: 0;
+}
+
+dl {
+    margin: 0 1.625em;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+dd {
+    margin: 0 0 1.625em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+cite, em, i {
+    font-style: italic;
+}
+
+cite {
+    border: 0;
+}
+
+big {
+    font-size: 131.25%;
+}
+
+.mceContentBody {
+    blockquote,
+    blockquote p {
+        margin: 0 3em;
+        font-weight: normal;
+        font-style: italic !important;
+        font-family: Georgia, "Bitstream Charter", serif !important;
+    }
+}
+
+.mceContentBody {
+    blockquote em,
+    blockquote i,
+    blockquote cite {
+        font-style: normal;
+    }
+}
+
+.mceContentBody blockquote cite {
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+pre {
+    margin-bottom: 1.625em;
+    padding: .75em 1.625em;
+    background: #f4f4f4;
+    font: 13px "Courier 10 Pitch", Courier, monospace;
+    line-height: 1.5;
+}
+
+code,
+kbd,
+samp,
+var {
+    font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr, acronym, dfn {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+address {
+    display: block;
+    margin: 0 0 1.625em;
+}
+
+del {
+    color: #333;
+}
+
+ins {
+    border: 0;
+    background: #fff9c0;
+    color: #333;
+    text-decoration: none;
+}
+
+sup,
+sub {
+    position: relative;
+    height: 0;
+    vertical-align: baseline;
+    font-size: 10px;
+    line-height: 1;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+input[type=text],
+textarea {
+    border: 1px solid rgb(221, 221, 221);
+    background: #fafafa;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    color: rgb(136, 136, 136);
+}
+
+input[type=text]:focus,
+textarea:focus {
+    color: rgb(51, 51, 51);
+}
+
+textarea {
+    padding-left: 3px;
+    width: 98%;
+}
+
+input[type=text] {
+    padding: 3px;
+}
+
+/* Links */
+a,
+a em,
+a strong {
+    color: #1b8be0;
+    text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+    text-decoration: underline;
+}
+
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.625em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.625em;
+}
+
+.aligncenter {
+    display: block;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Tables */
+table {
+    margin: 0 0 1.625em;
+    width: 100%;
+    border: none !important;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-bottom: 1px solid rgb(221, 221, 221) !important;
+    text-align: left;
+}
+
+tr th {
+    border: none !important;
+    color: rgb(102, 102, 102);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.6em;
+}
+
+td {
+    padding: 6px 10px 6px 0;
+    border: none !important;
+    border-top: 1px solid rgb(221, 221, 221) !important;
+}
+
+/* Images */
+img[class*="wp-image-"] {
+    max-width: 97.5%;
+    height: auto;
+}
+
+img.size-full {
+    width: auto; /* Prevent stretching of full-size images in IE8 */
+}
+
+img.wp-smiley {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+}
+
+p img,
+.wp-caption {
+    margin-top: .4em;
+}
+
+img {
+    padding: 6px;
+    border: 1px solid #dddddd;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+    margin-bottom: 1.625em;
+}
+
+.wp-caption {
+    margin-bottom: 1.625em;
+    padding: 9px;
+    max-width: 96%;
+    border: 0;
+    background: #eeeeee;
+}
+
+.wp-caption img {
+    display: block;
+    margin: 5px auto 0 !important;
+    max-width: 98%;
+    border-color: #eeeeee;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+    position: relative;
+    margin: 0 0 .6em 0 !important;
+    padding: 0 0 5px 40px;
+    color: #666;
+    text-align: left;
+    font-size: 12px;
+    font-family: Georgia, serif !important;
+}
+
+.wp-caption .wp-caption-text:before {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    margin-right: 5px;
+    color: #666;
+    content: '\2014';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+}
+
+a:focus,
+a:hover,
+a:active {
+    [class*="wp-image-"] {
+        border-color: #bbbbbb;
+        background: #eeeeee;
+    }
+}
+
+.wp-caption a:focus img,
+.wp-caption a:active img,
+.wp-caption a:hover img {
+    border-color: #dddddd;
+    background: #fff;
+}

@@ -1,0 +1,139 @@
+.insight-countdown {
+    .countdown-inner {
+        width: 100%;
+        overflow: hidden;
+
+        .countdown-timer {
+            margin-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            text-align: center;
+
+            & > div {
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                //color: #fff;
+                font-size: 72px;
+                line-height: 1;
+                font-weight: 900;
+                font-family: $font__main;
+                margin: 0px 30px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:after {
+                    content: ':';
+                    display: inline-block;
+                    line-height: 1;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    margin-left: -30px;
+                    font-size: 28px;
+                    //color: #fff;
+                }
+
+                &:first-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                span {
+                    white-space: nowrap;
+                    display: block;
+                    margin-top: 10px;
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 400;
+                    //color: #fff;
+                    text-transform: uppercase;
+                    width: 100%;
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+    }
+
+    &.style-small {
+        .countdown-inner {
+            .countdown-timer {
+                & > div {
+                    font-size: 34px;
+                    line-height: 36px;
+                    font-weight: 700;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:after {
+                        top: 0;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    &.color-white {
+        .countdown-inner {
+            .countdown-timer {
+                & > div {
+                    color: #fff;
+
+                    &:after {
+                        color: #fff;
+                    }
+
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.color-primary {
+        .countdown-inner {
+            .countdown-timer {
+                & > div {
+                    color: $primary-color;
+
+                    &:after {
+                        color: $primary-color;
+                    }
+
+                    span {
+                        color: #5e5a54;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .countdown-inner {
+            .countdown-timer {
+                & > div {
+                    font-size: 40px;
+                    margin: 0 10px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

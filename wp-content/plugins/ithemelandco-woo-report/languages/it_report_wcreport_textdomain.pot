@@ -1,0 +1,139 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: iThemelandCo Woo Report Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-31 15:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: it_report_wcreport_textdomain"
+
+#: helpers/industry_helper.php:9
+msgid "AdTech and AdNetwork"
+msgstr ""
+
+#: helpers/industry_helper.php:10
+msgid "Agency"
+msgstr ""
+
+#: helpers/industry_helper.php:8
+msgid "Automotive"
+msgstr ""
+
+#: helpers/industry_helper.php:11
+msgid "B2B Software"
+msgstr ""
+
+#: helpers/industry_helper.php:12
+msgid "B2C Internet Services"
+msgstr ""
+
+#: helpers/industry_helper.php:13
+msgid "Classifieds"
+msgstr ""
+
+#: helpers/industry_helper.php:14
+msgid "Consulting and Market Research"
+msgstr ""
+
+#: helpers/industry_helper.php:15
+msgid "CPG"
+msgstr ""
+
+#: helpers/industry_helper.php:16
+msgid "Education"
+msgstr ""
+
+#: helpers/industry_helper.php:17
+msgid "Education (Student)"
+msgstr ""
+
+#: helpers/industry_helper.php:18
+msgid "Equity Research"
+msgstr ""
+
+#: helpers/industry_helper.php:19
+msgid "Financial Services"
+msgstr ""
+
+#: helpers/industry_helper.php:20
+msgid "Gambling and Gaming"
+msgstr ""
+
+#: helpers/industry_helper.php:21
+msgid "Hedge Funds and Asset Management"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://ithemelandco.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://ithemelandco.com/plugins/woocommerce-report/"
+msgstr ""
+
+#: helpers/industry_helper.php:22
+msgid "Investment Banking"
+msgstr ""
+
+#. Author of the plugin
+msgid "iThemelandCo"
+msgstr ""
+
+#. Name of the plugin
+msgid "iThemelandCo Woo Report Lite"
+msgstr ""
+
+#: helpers/industry_helper.php:23
+msgid "Logistics and Shipping"
+msgstr ""
+
+#: helpers/industry_helper.php:32
+msgid "Other"
+msgstr ""
+
+#: helpers/industry_helper.php:24
+msgid "Payments"
+msgstr ""
+
+#: helpers/industry_helper.php:25
+msgid "Pharma and Healthcare"
+msgstr ""
+
+#: helpers/industry_helper.php:26
+msgid "Private Equity and Venture Capital"
+msgstr ""
+
+#: helpers/industry_helper.php:28
+msgid "Public Sector, Non Profit, Fraud and Compliance"
+msgstr ""
+
+#: helpers/industry_helper.php:27
+msgid "Publishers and Media"
+msgstr ""
+
+#: helpers/industry_helper.php:29
+msgid "Retail and eCommerce"
+msgstr ""
+
+#: helpers/industry_helper.php:30
+msgid "Telecom"
+msgstr ""
+
+#: helpers/industry_helper.php:31
+msgid "Travel"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"WooCommerce Advance Reporting plugin is a comprehensive and the most "
+"complete reporting system."
+msgstr ""

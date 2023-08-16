@@ -1,0 +1,36 @@
+.insight-counter {
+    display: block;
+    width: 100%;
+
+    .number {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1;
+        color: $primary-color;
+
+        span {
+            line-height: 1;
+            vertical-align: top !important;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+
+    &.text-left {
+        text-align: left;
+    }
+
+    &.text-center {
+        text-align: center;
+    }
+
+    &.text-right {
+        text-align: right;
+    }
+}

@@ -1,0 +1,143 @@
+ul.token-input-list {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: text;
+    font-size: 14px;
+    font-family: Verdana;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    list-style-type: none;
+    clear: left;
+}
+
+ul.token-input-list li {
+    list-style-type: none;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+ul.token-input-list li:last-child {
+    margin-bottom: 5px;
+}
+
+ul.token-input-list li input {
+    width: 350px;
+    padding: 7px 10px;
+    line-height: 1;
+    background-color: #eee;
+    -webkit-appearance: caret;
+    border: none;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 100% !important;
+    font-size: 12px;
+}
+
+ul.token-input-list li input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+li.token-input-token {
+    overflow: hidden;
+    height: auto !important;
+    height: 1%;
+    margin: 5px;
+    padding: 10px !important;
+    background-color: #eee;
+    color: #000;
+    font-weight: normal;
+    cursor: default;
+    display: block;
+    line-height: 1;
+    font-size: 12px;
+}
+
+li.token-input-input-token {
+    margin: 5px !important;
+    padding: 0 !important;
+}
+
+li.token-input-token p {
+    float: left;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 12px;
+}
+
+li.token-input-token span {
+    float: right;
+    color: #777;
+    cursor: pointer;
+}
+
+li.token-input-selected-token {
+    background-color: #08844e;
+    color: #fff;
+}
+
+li.token-input-selected-token span {
+    color: #bbb;
+}
+
+div.token-input-dropdown {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: default;
+    z-index: 999999;
+    padding: 5px;
+}
+
+div.token-input-dropdown p {
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+    color: #777;
+}
+
+div.token-input-dropdown ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.token-input-dropdown ul li {
+    background-color: #fff;
+    padding: 10px;
+    list-style-type: none;
+}
+
+div.token-input-dropdown ul li:last-child {
+    margin-bottom: 0;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item {
+    background-color: #fafafa;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item2 {
+    background-color: #fff;
+}
+
+div.token-input-dropdown ul li em {
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+    background-color: #d0efa0;
+}
+

@@ -1,0 +1,125 @@
+.insight-product-tab {
+    .insight-tab {
+        margin-top: 32px;
+        margin-bottom: 57px;
+        text-align: center;
+
+        ul {
+            padding-left: 0;
+
+            li {
+                display: inline;
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                    padding: 5px;
+                    &:before {
+                        display: none !important;
+                    }
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 0.1em;
+
+                    &.active {
+                        color: $primary-color;
+                    }
+                }
+
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 20px;
+                    height: 1px;
+                    width: 20px;
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+
+    .products-tab-content {
+        .products-tab-content-inner {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .load-btn {
+        text-align: center;
+
+        button {
+            &.loading {
+                &:after {
+                    content: '...';
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .products {
+            .product {
+                display: block;
+            }
+        }
+        .columns-1 {
+            .products {
+                .product {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .columns-2 {
+            .products {
+                .product {
+                    width: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+        .columns-3 {
+            .products {
+                .product {
+                    width: 33.33%;
+                    max-width: 33.33%;
+                }
+            }
+        }
+        .columns-4 {
+            .products {
+                .product {
+                    width: 25%;
+                    max-width: 25%;
+                }
+            }
+        }
+        .columns-5 {
+            .products {
+                .product {
+                    width: 20%;
+                    max-width: 20%;
+                }
+            }
+        }
+        .columns-6 {
+            .products {
+                .product {
+                    width: 16.66%;
+                }
+            }
+        }
+    }
+}

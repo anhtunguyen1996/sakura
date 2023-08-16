@@ -1,0 +1,117 @@
+.insight-about3 {
+    .about3-title {
+        text-align: center;
+
+        img {
+            margin-top: -70px;
+        }
+
+        h2, .sub-title {
+            color: $primary-color;
+        }
+
+        h2 {
+            font-size: 56px;
+        }
+
+        .sub-title {
+            margin-top: -95px;
+            font-size: 97px;
+            opacity: .1;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .special-heading {
+            text-align: center;
+        }
+    }
+
+    .image1 {
+        text-align: right;
+        @include media-breakpoint-down(md) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .image2 {
+        align-self: flex-end;
+
+        img {
+            margin-bottom: -85px;
+        }
+
+        @include media-breakpoint-down(md) {
+            img {
+                margin: 20px;
+            }
+            text-align: center;
+        }
+    }
+
+    .image3 {
+        @include media-breakpoint-down(md) {
+            img {
+                margin: 20px;
+            }
+            text-align: center;
+        }
+    }
+
+    .row-bottom {
+        margin-top: 30px;
+        align-items: center;
+
+        .about3-quote {
+            margin-top: 46px;
+            border: 1px solid #f1eeea;
+            padding: 30px;
+            position: relative;
+
+            span {
+                color: $primary-color;
+            }
+
+            .small {
+                font-size: 22px;
+            }
+
+            .big {
+                opacity: .1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                &:before {
+                    -ms-transform: rotate(180deg); /* IE 9 */
+                    -webkit-transform: rotate(180deg); /* Safari */
+                    transform: rotate(180deg);
+                    font-size: 88px;
+                }
+            }
+
+            .about3-quote-text {
+                color: #5e5a54;
+                line-height: 2;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 400;
+            }
+
+            .about3-quote-author {
+                color: #392a25;
+                line-height: 2;
+                font-size: 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin: 20px 0 10px;
+            }
+        }
+    }
+}

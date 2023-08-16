@@ -1,0 +1,18 @@
+// Flex setup
+$enable-flex: true;
+
+// Breakpoint setup
+$grid-breakpoints: (
+    // Extra small screen / phone
+        xs: 0,
+    // Small screen / phone
+        sm: 544px,
+    // Medium screen / tablet
+        md: 769px,
+    // Large screen / desktop
+        lg: 992px,
+    // Extra large screen / wide desktop
+        xl: 1200px,
+    // Super extra screen
+        xxl:1920px
+) !default;

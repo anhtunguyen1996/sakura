@@ -1,0 +1,101 @@
+.content-area .entry-content > *.alignfull {
+    position: relative;
+    left: calc((1140px - 100vw) / 2);
+    width: 100vw;
+    max-width: 100vw;
+    clear: both;
+
+    @media only screen and (min-width: 1280px) {
+        left: calc((1140px - 100vw) / 2);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        left: calc((930px - 100vw) / 2);
+    }
+
+    @media only screen and (min-width: 1024px) {
+        left: calc((930px - 100vw) / 2);
+    }
+
+    @media only screen and (min-width: 768px) {
+        left: calc((610px - 100vw) / 2);
+    }
+
+    @media only screen and (min-width: 0px) {
+        left: -15px;
+    }
+}
+
+.content-area .entry-content > *.alignwide {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+
+    @media only screen and (min-width: 1280px) {
+        width: calc(100% + 400px);
+        max-width: calc(100% + 400px);
+        left: -200px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: calc(100% + 200px);
+        max-width: calc(100% + 200px);
+        left: -100px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: calc(100% + 100px);
+        max-width: calc(100% + 100px);
+        left: -50px;
+    }
+}
+
+.content-area .entry-content > *.alignleft {
+    /*rtl:ignore*/
+    float: left;
+    max-width: calc(5 * (100vw / 12));
+    margin-top: 0;
+    margin-left: 0;
+    /*rtl:ignore*/
+    margin-right: 1rem;
+
+    @media only screen and (min-width: 768px) {
+        max-width: calc(4 * (100vw / 12));
+        /*rtl:ignore*/
+        margin-right: calc(2 * 1rem);
+    }
+}
+
+.content-area .entry-content > *.alignright {
+    /*rtl:ignore*/
+    float: right;
+    max-width: calc(5 * (100vw / 12));
+    margin-top: 0;
+    margin-right: 0;
+    /*rtl:ignore*/
+    margin-left: 1rem;
+
+    @media only screen and (min-width: 768px) {
+        max-width: calc(4 * (100vw / 12));
+        margin-right: 0;
+        /*rtl:ignore*/
+        margin-left: calc(2 * 1rem);
+    }
+}
+
+.content-area .entry-content > *.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: 1168px) {
+        max-width: calc(6 * (100vw / 12) - 28px);
+    }
+
+    @media only screen and (min-width: 768px) {
+        max-width: calc(8 * (100vw / 12) - 28px);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

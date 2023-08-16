@@ -1,0 +1,65 @@
+%clearfix {
+    @include clearfix;
+
+    &-sm {
+        @include media-breakpoint-up(sm) {
+            @include clearfix;
+        }
+    }
+
+    &-md {
+        @include media-breakpoint-up(md) {
+            @include clearfix;
+        }
+    }
+
+    &-lg {
+        @include media-breakpoint-up(lg) {
+            @include clearfix;
+        }
+    }
+}
+
+%absolute-center {
+    @include absolute-center;
+
+    &-sm {
+        @include media-breakpoint-up(sm) {
+            @include absolute-center;
+        }
+    }
+
+    &-md {
+        @include media-breakpoint-up(md) {
+            @include absolute-center;
+        }
+    }
+
+    &-lg {
+        @include media-breakpoint-up(lg) {
+            @include absolute-center;
+        }
+    }
+}
+
+%is-translate {
+    @include is-translated;
+
+    &-sm {
+        @include media-breakpoint-up(sm) {
+            @include is-translated;
+        }
+    }
+
+    &-md {
+        @include media-breakpoint-up(md) {
+            @include is-translated;
+        }
+    }
+
+    &-lg {
+        @include media-breakpoint-up(lg) {
+            @include is-translated;
+        }
+    }
+}

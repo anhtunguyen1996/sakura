@@ -1,0 +1,91 @@
+/*
+Theme Name: TM Organik
+Theme URI: http://organik.thememove.com
+Author: ThemeMove
+Author URI: http://thememove.com
+Description: An Appealing Organic Store, Farm & Bakery WooCommerce Theme
+Version: 2.9.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tm-organik
+Tags: featured-images, post-formats, sticky-post, threaded-comments, translation-ready
+*/
+//settings
+@import "settings/global";
+@import "settings/color";
+@import "settings/typography";
+@import "settings/bootstrap";
+@import "settings/keyframes";
+//tools
+@import "tools/mixins";
+@import "tools/family";
+//generic
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/box-sizing";
+@import "generic/clearings";
+//vendor
+@import "vendor/bootstrap/bootstrap-grid";
+@import "vendor/hint/hint";
+//elements
+@import "elements/headings";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/forms";
+@import "elements/formatting";
+@import "elements/images";
+@import "elements/tables";
+@import "elements/typography";
+@import "elements/vc-elements/vc-elements";
+//objects
+@import "objects/accessibility";
+@import "objects/alignments";
+@import "objects/media";
+@import "objects/galleries";
+@import "objects/buttons";
+@import "objects/balloon";
+@import "objects/infinitescroll";
+@import "objects/pagination";
+@import "objects/layout";
+@import "objects/topbar";
+@import "objects/menu-mobile";
+@import "objects/header";
+@import "objects/header-01";
+@import "objects/header-02";
+@import "objects/header-03";
+@import "objects/header-04";
+@import "objects/header-05";
+@import "objects/header-mobile";
+@import "objects/header-overlay";
+@import "objects/navigation";
+@import "objects/content";
+@import "objects/footer";
+@import "objects/copyright";
+@import "objects/breadcrumbs";
+@import "objects/popup";
+//components
+@import "components/default";
+@import "components/loading";
+@import "components/site";
+@import "components/pages";
+@import "components/posts";
+@import "components/widgets";
+@import "components/comments";
+@import "components/archive";
+@import "components/responsive";
+@import "components/unittest";
+@import "components/extra";
+@import "components/landing";
+//woo
+@import "woo/woo";
+@import "woo/woo-single";
+@import "woo/woo-wishlist";
+@import "woo/woo-cart";
+@import "woo/woo-checkout";
+@import "woo/woo-account";
+@import "woo/woo-extra";
+//trumps
+@import "trumps/shared";
+@import 'trumps/home';
+@import 'trumps/slick';
+@import 'trumps/animations';

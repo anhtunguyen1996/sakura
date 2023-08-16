@@ -1,0 +1,40 @@
+.insight-carousel {
+    &--slide {
+        outline: none;
+
+        img {
+            margin: 0 auto;
+
+            &:hover {
+                @include transition(all 0.5s);
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+                opacity: .7;
+            }
+        }
+    }
+
+    &.grayscale {
+        img {
+            @include transition(all 0.5s);
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            opacity: .7;
+
+            &:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .slick-track {
+        @extend .row;
+        @extend .row-xs-center;
+    }
+}
+
+.slick-track {
+    min-width: 100%;
+}

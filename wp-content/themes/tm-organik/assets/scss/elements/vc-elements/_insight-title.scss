@@ -1,0 +1,102 @@
+.insight-title {
+    text-align: center;
+
+    .insight-title--subtitle-inner {
+        position: relative;
+        display: inline-block;
+    }
+
+    .leaf-1,
+    .leaf-2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .leaf-1 {
+        left: -65px;
+    }
+
+    .leaf-2 {
+        right: -65px;
+    }
+
+    &--title {
+        color: $primary-color;
+        line-height: 1.2;
+        font-size: 56px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: $font__second;
+        @include media-breakpoint-down(md) {
+            font-size: 40px;
+        }
+    }
+
+    &--subtitle {
+        text-transform: uppercase;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        color: #392a25;
+        font-weight: 900;
+        line-height: 1.6;
+        margin-top: -10px;
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            margin-top: -15px;
+        }
+    }
+
+    &.style-default-left {
+        text-align: left;
+
+        .insight-title--title {
+            margin-left: -120px;
+            @include media-breakpoint-down(md) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.style-color {
+        .insight-title--title {
+            color: inherit;
+        }
+
+        .insight-title--subtitle {
+            color: inherit;
+        }
+
+        .separator--icon {
+            i {
+                color: inherit;
+            }
+        }
+
+        .vc_sep_holder .vc_sep_line {
+            border-color: inherit;
+        }
+    }
+
+    &.style-type-2 {
+        .insight-title--title {
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 15px;
+        }
+
+        .insight-title--subtitle {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 600;
+            text-transform: inherit;
+            letter-spacing: 0;
+        }
+    }
+
+    &:hover {
+        i {
+            animation: spinner 2s linear infinite;
+            -webkit-animation: spinner 2s linear infinite;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.customize-control-kirki .button.button-small {
+    height: 29px;
+}
+
+/*custom*/
+li.customize-control {
+    position: relative;
+}
+
+li.customize-control hr {
+    margin: 0 -20px 0;
+}
+
+.group_title {
+    background: #f7f7f7;
+    margin: 10px -20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+}
+
+#customize-controls {
+    background-color: #fff;
+}
+
+.customize-control-repeater .repeater-fields .repeater-row {
+    background: none !important;
+}
+
+#customize-controls #customize-theme-controls .accordion-section > .accordion-section-title > span + span,
+#customize-controls .control-section .customize-section-title h3 > .dashicons {
+    display: none;
+}
+
+#customize-controls #customize-theme-controls .customize-info > .accordion-section-title {
+    border-bottom: none !important;
+}
+
+.control-section-themes .accordion-section-title,
+#customize-controls .customize-info {
+    margin: 0;
+}
+
+.big_title {
+    font-size: 20px;
+    font-weight: 200;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px 15px;
+    margin: 0 -20px;
+}
+
+.customize-control-kirki .desc {
+    color: #555;
+    font-size: 13px;
+}
+
+.customize-control-kirki-radio-image input + label img {
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 2px;
+    background-color: #999999;
+    margin-right: 5px;
+}
+
+.customize-control-kirki-radio-image input:checked + label img {
+    background-color: #3498DB;
+}

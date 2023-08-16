@@ -1,0 +1,50 @@
+.overlay-header {
+    .header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: none;
+        width: 100%;
+
+        .topbar {
+            padding: 0;
+            background-color: transparent;
+            color: rgba(255, 255, 255, .7);
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+            .topbar-container {
+                background-color: transparent;
+            }
+
+            a {
+                color: rgba(255, 255, 255, .7);
+            }
+
+            .topbar_02__phone {
+                color: #fff;
+            }
+        }
+
+        .btn-wrap {
+            .wishlist-wrap, .top-search-btn, .mini-cart-wrap .mini-cart-icon {
+                color: #fff;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        &.headroom--not-top {
+            background-color: #333;
+
+            .topbar {
+                display: none;
+            }
+        }
+
+        &.header-mobile .header-left i {
+            color: #fff;
+        }
+    }
+}

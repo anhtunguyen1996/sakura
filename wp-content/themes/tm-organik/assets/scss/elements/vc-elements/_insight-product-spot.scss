@@ -1,0 +1,154 @@
+.insight-product-spot {
+    position: relative;
+
+    .insight-product-spot--info {
+        .title {
+            font-weight: 700;
+            color: #392a25;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+    }
+
+    .insight-product-spot--icon {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        top: 0;
+
+        .insight-product-spot--icon-inner {
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 56px;
+                height: 56px;
+                background-color: $primary-color;
+                opacity: .2;
+                @include border-radius(50%);
+                position: absolute;
+                top: -8px;
+                left: -8px;
+            }
+
+            i {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 32px;
+                text-align: center;
+                background-color: $primary-color;
+                color: #fff;
+                @include border-radius(50%);
+            }
+
+            .spot {
+                position: absolute;
+                display: block;
+                width: 180px;
+                height: 1px;
+                background-image: url("assets/images/line_bg.png");
+                background-repeat: repeat-x;
+
+                .spot-inner {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        @include border-radius(50%);
+                        position: absolute;
+                        top: -5px;
+                        z-index: 8;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        background-color: rgba(0, 0, 0, .1);
+                        @include border-radius(50%);
+                        position: absolute;
+                        top: -8px;
+                        z-index: 7;
+                    }
+                }
+            }
+        }
+    }
+
+    &.type-left {
+        padding-right: 70px;
+        text-align: right;
+
+        .insight-product-spot--icon {
+            right: 0;
+
+            .insight-product-spot--icon-inner {
+                .spot {
+                    top: 19px;
+                    left: 50px;
+
+                    .spot-inner {
+                        &:before {
+                            right: 0;
+                        }
+
+                        &:after {
+                            right: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.type-right {
+        padding-left: 70px;
+        text-align: left;
+
+        .insight-product-spot--icon {
+            left: 0;
+
+            .insight-product-spot--icon-inner {
+                .spot {
+                    top: 19px;
+                    right: 50px;
+
+                    .spot-inner {
+                        &:before {
+                            left: 0;
+                        }
+
+                        &:after {
+                            left: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &.type-left, &.type-right {
+            padding-left: 70px;
+            text-align: left;
+
+            .insight-product-spot--icon {
+                left: 0;
+
+                .insight-product-spot--icon-inner {
+                    .spot {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Rossela Demo';
+	src: url('Rossela-Demo.ttf');
+	src: url('Rossela-Demo.ttf#iefix') format('embedded-opentype'),
+	url('Rossela-Demo.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

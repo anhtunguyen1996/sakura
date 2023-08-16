@@ -1,0 +1,33 @@
+.site {
+    overflow: hidden;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-only($breakpoint) {
+        .hidden-#{$breakpoint} {
+            display: none;
+        }
+    }
+}
+
+[visibility='visible'] {
+    display: block;
+}
+
+[visibility='hidden'] {
+    display: none;
+}
+
+a.cookie_notice_ok {
+    border: 1px solid $primary-color;
+    padding: 2px 5px;
+    border-radius: 2px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+
+    &:hover {
+        background-color: $primary-color !important;;
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,38 @@
+header.header-02 {
+    .header-container {
+        position: relative;
+
+        .header-right {
+            position: static;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            nav {
+                display: inline-block;
+            }
+
+            .btn-wrap {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    nav.menu {
+        text-align: center;
+
+        li {
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    nav.menu {
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

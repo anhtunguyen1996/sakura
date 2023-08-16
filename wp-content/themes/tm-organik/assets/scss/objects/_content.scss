@@ -1,0 +1,19 @@
+.content {
+    width: 100%;
+
+    &--top {
+        .wrapper {
+            @include boxed;
+        }
+    }
+
+    &--left {
+        .wrapper {
+            @extend .container-fluid;
+        }
+    }
+}
+
+body:not(.home) .content > .wrapper {
+    margin-bottom: 50px;
+}

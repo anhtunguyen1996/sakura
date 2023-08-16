@@ -1,0 +1,75 @@
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+body.page {
+    div.wpcf7-validation-errors {
+        border: none;
+        background-color: $light-gray-color;
+        padding: 15px;
+        margin: 30px 0 0 0;
+        @include border-radius(2px);
+    }
+
+    div.wpcf7-mail-sent-ok {
+        border: none;
+        background-color: $primary-color;
+        color: #fff;
+        padding: 15px;
+        margin: 30px 0 0 0;
+        @include border-radius(2px);
+    }
+}
+
+body.error404 {
+    background: #a8d5ec;
+
+    .header {
+        background-color: #fff;
+    }
+
+    .footer, .copyright {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 60px 0;
+
+        img {
+            margin-bottom: 60px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 14px;
+            color: #5e5a54;
+
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.no-results {
+    .entry-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #392a25;
+    }
+
+    .entry-content {
+        p {
+            margin: 0;
+        }
+    }
+}

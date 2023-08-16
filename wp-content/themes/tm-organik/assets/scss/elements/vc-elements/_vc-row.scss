@@ -1,0 +1,26 @@
+body .vc_row[data-vc-full-width] {
+    overflow: visible;
+}
+
+@include media-breakpoint-down(md) {
+    // .vc_column_container[class*=vc_col] {
+    //     width: 100%;
+    // }
+    .vc_column_container {
+        &.vc_col-sm-4, &.vc_col-sm-8 {
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .vc_column_container {
+        &.vc_col-sm-4 {
+            width: 33.33333333%;
+        }
+
+        &.vc_col-sm-8 {
+            width: 66.66666667%;
+        }
+    }
+}

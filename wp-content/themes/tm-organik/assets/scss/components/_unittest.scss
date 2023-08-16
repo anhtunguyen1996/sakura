@@ -1,0 +1,57 @@
+article.post {
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px;
+    }
+
+    .entry-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #392a25;
+    }
+
+    .entry-meta {
+        color: #aaaaaa;
+
+        .posted-on, .categories {
+            margin-right: 20px;
+        }
+    }
+
+    .entry-content {
+        pre {
+            max-width: 600px;
+        }
+    }
+
+    .entry-footer {
+        .share {
+            text-align: right;
+        }
+    }
+
+    a {
+        h1 {
+            @include transit;
+        }
+
+        &:hover {
+            h1 {
+                color: $primary-color;
+            }
+        }
+    }
+}

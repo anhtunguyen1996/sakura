@@ -1,0 +1,23 @@
+a {
+    color: $gray-color;
+    text-decoration: none;
+    @include transit;
+
+    // &:visited {
+    // 	color: $color__link-visited;
+    // }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}

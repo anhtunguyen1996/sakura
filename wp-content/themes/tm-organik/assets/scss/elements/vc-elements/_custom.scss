@@ -1,0 +1,66 @@
+@include media-breakpoint-up(lg) {
+    .app-desc {
+        margin-top: -150px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .btn-googleplay {
+        margin-top: -150px;
+    }
+    .btn-store {
+        float: right;
+        margin-top: -88px;
+        position: relative;
+        z-index: 9;
+    }
+    .btn-store, .btn-googleplay {
+        &:hover {
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+.loadmore-contain {
+    padding-top: 40px;
+    text-align: center;
+
+    .btn-loadmore {
+        margin: 0 auto;
+        transition: all 0.5s;
+        text-transform: uppercase;
+    }
+
+    .btn-transparent {
+        border: none !important;
+        background: none !important;
+    }
+}
+
+html .bg-center-bottom {
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+.row_slash:before {
+    content: '';
+    display: block !important;
+    width: 110%;
+    height: 250px;
+    position: absolute;
+    left: -5%;
+    transform: rotate(-5deg);
+    top: -120px;
+    background: inherit;
+    overflow: visible;
+}
+
+.vc_column_container {
+    z-index: 1;
+}
+
+/* vc_editor */
+.vc_editor .tm-animation {
+    opacity: 1 !important;
+}

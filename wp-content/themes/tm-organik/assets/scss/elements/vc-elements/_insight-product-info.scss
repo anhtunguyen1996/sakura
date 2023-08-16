@@ -1,0 +1,21 @@
+.insight-product-info {
+    .item {
+        display: block;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        div {
+            display: inline-block;
+
+            &:first-child {
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                min-width: 120px;
+            }
+        }
+    }
+}

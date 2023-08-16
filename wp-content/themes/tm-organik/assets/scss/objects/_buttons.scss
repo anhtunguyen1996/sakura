@@ -1,0 +1,30 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button[type="submit"] {
+    padding: 12px 29px;
+    border: 1px solid;
+    border-color: $primary-color;
+    border-radius: 3px;
+    background: $primary-color;
+    //box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 15px 17px rgba(255, 255, 255, .5), inset 0 -5px 12px rgba(0, 0, 0, .05);
+    color: #fff;
+    //text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+    font-size: 15px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    outline: none;
+    @include transit;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &:active,
+    &:focus {
+        //border-color: $primary-color;
+        //box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .5), inset 0 2px 5px rgba(0, 0, 0, .15);
+    }
+}
