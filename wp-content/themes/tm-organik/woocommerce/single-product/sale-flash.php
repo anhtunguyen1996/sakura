@@ -25,22 +25,22 @@ global $post, $product;
 if ( ! $product->is_in_stock() ) {
 	echo '<span class="outofstock"><span>' . esc_html__( 'Out', 'tm-organik' ) . '</span>' . esc_html__( 'of stock', 'tm-organik' ) . '</span>';
 } else {
-	echo '<div class="badges">';
-	//hot
-	if ( $product->is_featured() ) {
-		echo '<span class="hot">' . esc_html__( 'Hot', 'tm-organik' ) . '</span>';
-	}
-	//sale
-	if ( $product->is_on_sale() ) {
-		echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'tm-organik' ) . '</span>', $post, $product );
-	}
-	//new
-	$postdate      = get_the_time( 'Y-m-d', $product->get_id() );
-	$postdatestamp = strtotime( $postdate );
-	$newdays       = Insight::setting( 'shop_archive_new_days' );
-	if ( ( time() - ( 60 * 60 * 24 * $newdays ) ) < $postdatestamp ) {
-		echo '<span class="new">' . esc_html__( 'New', 'tm-organik' ) . '</span>';
-	}
-	echo '</div>';
+	// echo '<div class="badges">';
+	// //hot
+	// if ( $product->is_featured() ) {
+	// 	echo '<span class="hot">' . esc_html__( 'Hot', 'tm-organik' ) . '</span>';
+	// }
+	// //sale
+	// if ( $product->is_on_sale() ) {
+	// 	echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'tm-organik' ) . '</span>', $post, $product );
+	// }
+	// //new
+	// $postdate      = get_the_time( 'Y-m-d', $product->get_id() );
+	// $postdatestamp = strtotime( $postdate );
+	// $newdays       = Insight::setting( 'shop_archive_new_days' );
+	// if ( ( time() - ( 60 * 60 * 24 * $newdays ) ) < $postdatestamp ) {
+	// 	echo '<span class="new">' . esc_html__( 'New', 'tm-organik' ) . '</span>';
+	// }
+	// echo '</div>';
 }
 ?>

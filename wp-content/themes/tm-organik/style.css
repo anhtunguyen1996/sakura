@@ -11252,3 +11252,20 @@ body .col-md-6p {
 .insight-woo .products .product .product-thumb .product-action {
   display: none !important;
 }
+
+.insight-woo .products .product .product-thumb .badges {
+  display: none !important;
+}
+
+.woo-multi-currency {
+  display: none !important;
+}
+
+.advise {
+  padding: 10px 60px;
+  border-radius: 50px;
+  background-color: #3d94ff;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}

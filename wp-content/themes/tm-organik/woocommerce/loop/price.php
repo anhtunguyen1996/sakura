@@ -23,5 +23,5 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price">222</span>
+	<span class="price">Liên hệ</span>
 <?php endif; ?>

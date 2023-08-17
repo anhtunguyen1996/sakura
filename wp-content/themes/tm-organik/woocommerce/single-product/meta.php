@@ -49,7 +49,7 @@ if ( ( Insight::setting( 'shop_single_compare' ) == 1 ) && ( class_exists( 'WPcl
 		echo wp_kses( wc_get_product_category_list( $product_id, ', ', '<tr class="product_meta_item posted_in"><td class="label">' . _n( 'Category', 'Categories', $cat_count, 'tm-organik' ) . '</td><td> ', '</td></tr>' ), 'insight-table' );
 		echo wp_kses( wc_get_product_tag_list( $product_id, ', ', '<tr class="product_meta_item tagged_as"><td class="label">' . _n( 'Tag', 'Tags', $tag_count, 'tm-organik' ) . '</td><td> ', '</td></tr>' ), 'insight-table' );
 		if ( Insight::setting( 'shop_single_share' ) == 1 ) { ?>
-            <tr class="product_meta_item share">
+            <!-- <tr class="product_meta_item share">
                 <td class="label"><?php esc_html_e( 'Share', 'tm-organik' ); ?></td>
                 <td>
                     <a target="_blank"
@@ -60,7 +60,7 @@ if ( ( Insight::setting( 'shop_single_compare' ) == 1 ) && ( class_exists( 'WPcl
                                                                   href="https://plus.google.com/share?url=<?php echo rawurlencode( get_permalink() ); ?>"><i
                                 class="fab fa-google-plus-g"></i></a>
                 </td>
-            </tr>
+            </tr> -->
 		<?php }
 		do_action( 'woocommerce_product_meta_end' ); ?>
     </table>

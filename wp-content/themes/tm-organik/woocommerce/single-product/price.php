@@ -22,4 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">Liên hệ</p>
+<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">
+	<a href="tel:0916459779" class="advise">Nhận tư vấn 091 645 9779</a>
+</p>
